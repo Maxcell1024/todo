@@ -4,8 +4,6 @@ function App() {
         <Container>
             <Row>
                 <Col md={{ offset: 3, span: 6 }}>
-                    const text = document.getElementById('text');
-                    text.textContent = 'Todo App by Takumi Fukuda';
                     <TodoListCard />
                 </Col>
             </Row>
@@ -55,7 +53,7 @@ function TodoListCard() {
         <React.Fragment>
             <AddItemForm onNewItem={onNewItem} />
             {items.length === 0 && (
-                <p className="text-center">No items yet! Add one above!</p>
+                <p className="text-center">No items yet! Add one above!!</p>
             )}
             {items.map(item => (
                 <ItemDisplay
