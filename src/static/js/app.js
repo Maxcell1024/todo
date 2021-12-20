@@ -4,7 +4,8 @@ function App() {
         <Container>
             <Row>
                 <Col md={{ offset: 3, span: 6 }}>
-                    document.write("test")
+                    const text = document.getElementById('text');
+                    text.textContent = 'Todo App by Takumi Fukuda';
                     <TodoListCard />
                 </Col>
             </Row>
